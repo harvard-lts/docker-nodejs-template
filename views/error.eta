@@ -1,0 +1,5 @@
+  <div class="col-sm-10 text-left">
+    <h2>Error</h2>
+    <h3>Status: <%= it.favorite %></h3>
+    <h4>Error message: <%= it.error %></h4>
+  </div>

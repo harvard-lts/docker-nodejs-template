@@ -1,0 +1,27 @@
+# Start: `docker-compose -f docker-compose-local.yml up -d --build --force-recreate`
+# Stop: `docker-compose -f docker-compose-local.yml stop`
+
+version: '3.7'
+services:
+
+  app:
+    container_name: docker-nodejs-template
+    build:
+      context: ./
+      dockerfile: DockerfileLocal
+    env_file: .env
+    command: npm run devserverstart
+    volumes:
+      - './:/home/node/app'
+      - '/home/node/app/node_modules'
+    ports:
+      - "3002:8081"
+    # Join this service to a custom docker network
+    networks:
+      - docker-nodejs-template-net
+
+
+  # Create a custom docker network if it does not exist already
+networks:
+  docker-nodejs-template-net:
+    name: docker-nodejs-template-net
