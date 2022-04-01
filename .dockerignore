@@ -4,3 +4,6 @@ Dockerfile*
 docker-compose*
 /logs/*
 !/logs/.keep
+
+# Configuration files
+*.env
