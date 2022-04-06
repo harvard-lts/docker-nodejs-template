@@ -1,9 +1,8 @@
+.env
+*.env
 node_modules
 npm-debug.log
 Dockerfile*
 docker-compose*
 /logs/*
 !/logs/.keep
-
-# Configuration files
-*.env
