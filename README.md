@@ -1,3 +1,8 @@
+## ARCHIVED 
+This project has been archived as it has been replaced by a new project.  
+
+The new template project is available in here: [node-ci-template](https://github.huit.harvard.edu/LTS/node-ci-template). 
+
 # docker-nodejs-template
 This project will create a generic, Dockerized, NodeJS application ready for action!
 
